@@ -1,3 +1,5 @@
+@import '../themes/variable';
+
 .header {
   .logo-header {
     background-color: #000;
@@ -20,10 +22,11 @@
         margin:0 15px;
         
         a {
-          font-size: 20px;
-          font-weight: 300;
+          // font-size: 20px;
+          // font-weight: 300;
+          // color: #fff;
+          @include text($text-2xl,$fw-light,$white);
           text-decoration: none;
-          color: #fff;
           transition: all 0.3s;
           position: relative;
           &::before{
