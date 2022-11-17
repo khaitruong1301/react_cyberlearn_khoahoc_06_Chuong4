@@ -28,7 +28,7 @@ export default function Home({}: Props) {
         <h3>Product Feature</h3>
         <div className='row mb-2'>
           {arrProduct.map((prod:ProductModel,index:number)=>{
-            return <div className='col-4' key={index}>
+            return <div className='col-4 mt-2' key={index}>
               <ProductCard prod={prod}/>
             </div>
           })}
